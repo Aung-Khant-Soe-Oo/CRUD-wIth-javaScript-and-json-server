@@ -1,0 +1,66 @@
+Note: You have to run json server at 8000 port
+      in the terminal run this command : json-server --watch data.json --port 8000
+
+
+index page 
+    If not login , render the last 20 posts in main section , the last post will render in hero section
+    If logged in , render all post start from the last post you created in main section , the last post will render in hero section
+
+    if you scroll about 20px you will see go to top button at the right bottom of the screen , after you click that button scroll auto to the top. 
+
+If you want to login
+    Click Login Button at the top right of nav bar and you will see login page
+    You have to enter correct username and password 
+    username is Aung Khant
+    password is 1234
+
+    if you enter wrong you get error message "Incorrect Credentials!"
+
+
+If you logged in
+    render all post start from the last post you created , the last post will render in hero section and 
+    login button is disappear and you will see logout button 
+
+    You can create , edit and delete post
+
+    if you want to create new posts
+        click the add new post button at the top right of nav bar
+        if you not logged in you can't see the button
+
+        after you click the add new button you will see the create page that have create from
+
+        in the form you have to enter data for new post
+        first, you have to enter title for your post title
+        second, copy of the image address you want and enter image address
+        tirdth, enter the content for your post
+
+        created at and created by  will auto create  with the time you create post and your username when you submit button
+
+        after submit create button , render the index page and you will see your create post at the first hero section. 
+
+
+if you click read more button,
+    you will see the detail of post you click
+
+    if you want to go back click back button at the left bottom of the page
+
+    if you want to delete that post,
+        click delete button bottom of detail post 
+        you have to logged in to delete, if you are not logged in login page will render
+        if you logged in alert box render and you have to confirm for delete. if you click yes , that post
+        will delete and render index page. if you click cancle nothing happen.
+
+    if you want to edit that post,
+        click edit button beside of delete button
+        you have to logged in to edit, if you are not logged in login page will render
+        if you are logged in edit page render and you will see the form like create form 
+        the data you want to edit is auto fill in the input box and edit what you want and 
+        click update button to update.
+        after click update button render the index page and you will see yout edit post.
+
+
+if you want logout ,
+ you have to already loggedin
+ if you are already loggedin,
+    click logout button at the top right of nav bar.
+    and then rerender the index page and logout button is disappear and you can't access to create delete edit post .

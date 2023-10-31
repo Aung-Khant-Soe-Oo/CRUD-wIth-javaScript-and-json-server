@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">myBlog</a>
+          </div>
+          <div class="user-actions">
+            <button class="btn" id="loginBtn">Login</button>
+            <button class="btn" id="logoutBtn" style="display: none">
+              Logout
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="login-form">
+          <div class="error">
+            <p>Incorrect Credentials!</p>
+          </div>
+          <form method="post">
+            <h3>Login</h3>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+              required
+            />
+            <button class="btn" type="submit">Login</button>
+          </form>
+        </section>
+        <a href="./index.html" class="back"><--Back</a>
+      </div>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>

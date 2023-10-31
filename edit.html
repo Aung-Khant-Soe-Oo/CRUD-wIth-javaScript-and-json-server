@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                   <a href="./index.html">myBlog</a>
+                </div>
+                <div class="user-actions">
+                    <a href="./create.html" class="btn create-btn" id="createBtn" style="display: none;">Add New Post</a>
+                    <a href="./login.html" class="btn" id="loginBtn">Login</a>
+                    <button class="btn" id="logoutBtn" style="display: none;">Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="create-sec">
+                <h3>Update Post</h3>
+                <form action="" method="post">
+                    <div> 
+                        <input type="text" name="title" id="title" class="input-box" placeholder="Enter Post Title" required>
+                    </div>
+                    <div>
+                        <input type="text" name="imgUrl" id="imgUrl" class="input-box" placeholder="Enter Image Address" required>
+                    </div>
+                    <div>
+                        <textarea name="content" id="content" class="input-box" cols="30" rows="10" placeholder="Enter Post Content" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Update</button>
+                  
+                </form>
+            </section>
+            <a href="./index.html" class="back"><--Back</a>
+        </div>
+    </main>
+    <script src="js/isLoggedIn.js"></script>
+    <script src="js/edit.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                   <a href="./index.html">myBlog</a>
+                </div>
+                <div class="user-actions">
+                    <a href="./create.html" class="btn create-btn" id="createBtn" style="display: none;">Add New Post</a>
+                    <a href="./login.html" class="btn" id="loginBtn">Login</a>
+                    <button class="btn" id="logoutBtn" style="display: none;">Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <!-- The last post will be rendered here -->
+            </section>
+            <section class="postList" id="postList">
+                <!-- Posts will be rendered here -->
+            </section>
+        </div>
+    </main>
+    <div class="go-top">^</div>
+    <script src="js/isLoggedIn.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/logout.js"></script>
+</body>
+</html>
